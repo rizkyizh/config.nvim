@@ -1,4 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- Customize Treesitter
 
@@ -9,7 +8,14 @@ return {
     ensure_installed = {
       "lua",
       "vim",
-      -- add more arguments for adding more treesitter parsers
+      "tsx",         -- buat React TSX
+      "typescript",  -- TypeScript
+      "javascript",  -- JavaScript
+      "html",        -- HTML (kadang dipakai di JSX/TSX)
     },
+    highlight = { enable = true },
+    indent = { enable = true },
+    autotag = { enable = true }, -- penting untuk auto close tag
   },
 }
+

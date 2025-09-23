@@ -25,7 +25,7 @@ return {
       dashboard.button("SPC f '", "  Bookmarks"),
       dashboard.button("SPC S l", "  Last Session", "<Leader>Sl"),
       dashboard.button("c", "  Configuration", ":e $MYVIMRC <CR>"),
-      dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
+      dashboard.button("q", "  Quit", ":qa<CR>"),
     }
 
     dashboard.section.footer.val = {
