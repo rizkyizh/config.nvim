@@ -24,7 +24,6 @@ return {
           ["<Tab>"] = { ":bnext<CR>", desc = "Next buffer", noremap = true },
           -- quick save
           -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
-          
         },
         t = {
           -- setting a mapping to false will disable it
