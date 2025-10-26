@@ -32,3 +32,34 @@ git clone https://github.com/rizkyizh/config.nvim ~/.config/nvim
 ```shell
 nvim
 ```
+
+## 🎹 Custom Key Mappings
+
+AmbatuVim menambahkan beberapa custom key mappings di atas konfigurasi default AstroNvim melalui modul astrocore.
+Berikut daftar mapping yang tersedia:
+
+### 📘 Normal Mode (n)
+
+| Key                  | Deskripsi                                | Command           |
+| -------------------- | ---------------------------------------- | ----------------- |
+| `<Leader>bn`         | Membuka tab baru                         | `:tabnew<CR>`     |
+| `<Leader>bD`         | Memilih buffer untuk ditutup             | `buffer_picker()` |
+| `<Leader>b`          | Grup "Buffers" (untuk which-key)         | —                 |
+| `<Tab>`              | Berpindah ke buffer berikutnya           | `:bnext<CR>`      |
+| `<S-Tab>`            | Berpindah ke buffer sebelumnya           | `:bprev<CR>`      |
+| _(Opsional)_ `<C-s>` | Menyimpan file (nonaktif secara default) | `:w!<CR>`         |
+
+### 📗 Visual Mode (v)
+
+| Key     | Deskripsi                         | Command               |
+| ------- | --------------------------------- | --------------------- |
+| `<C-J>` | Memindahkan blok seleksi ke bawah | `:move '>+1<CR>gv-gv` |
+| `<C-K>` | Memindahkan blok seleksi ke atas  | `:move '<-2<CR>gv-gv` |
+| `<C-H>` | Menggeser blok seleksi ke kiri    | `<gv`                 |
+| `<C-L>` | Menggeser blok seleksi ke kanan   | `>gv`                 |
+
+### 📙 Terminal Mode (t)
+
+| Key      | Deskripsi                                                         |
+| -------- | ----------------------------------------------------------------- |
+| _(none)_ | Tidak ada custom mapping. Beberapa mapping default dinonaktifkan. |
