@@ -29,12 +29,12 @@ return {
           -- setting a mapping to false will disable it
           -- ["<esc>"] = false,
         },
-v = {
-  ["<C-J>"] = { ":move '>+1<CR>gv-gv", desc = "Move selection down", noremap = true, silent = true },
-  ["<C-K>"] = { ":move '<-2<CR>gv-gv", desc = "Move selection up", noremap = true, silent = true },
-  ["<C-H>"] = { "<gv", desc = "Shift selection left", noremap = true, silent = true },
-  ["<C-L>"] = { ">gv", desc = "Shift selection right", noremap = true, silent = true },
-},
+        v = {
+          ["<C-J>"] = { ":move '>+1<CR>gv-gv", desc = "Move selection down", noremap = true, silent = true },
+          ["<C-K>"] = { ":move '<-2<CR>gv-gv", desc = "Move selection up", noremap = true, silent = true },
+          ["<C-H>"] = { "<gv", desc = "Shift selection left", noremap = true, silent = true },
+          ["<C-L>"] = { ">gv", desc = "Shift selection right", noremap = true, silent = true },
+        },
       },
     },
   },
